@@ -4,8 +4,9 @@ import { connect } from 'react-redux';
 class BookList extends Component {
   renderList() {
     return this.props.books.map(book => {
+      console.log(book);
       return (
-        <li className="list-group-item" key="book.title">
+        <li className="list-group-item" key={book.title}>
           {book.title}
         </li>
       );
@@ -13,9 +14,11 @@ class BookList extends Component {
   }
 
   render() {
-    return <ul className="list-group-item col-sm-4">{this.renderList()}</ul>;
+    return <ul className="list-group col-sm-4">{this.renderList()}</ul>;
   }
 }
+
+// below creates a smart component
 
 // create a function that connects state to props
 // this is the GLUE between react and redux

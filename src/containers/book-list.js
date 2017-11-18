@@ -17,10 +17,15 @@ class BookList extends Component {
   }
 }
 
+// create a function that connects state to props
+// this is the GLUE between react and redux
 function mapStateToProps(state) {
   return {
     books: state.books,
   };
 }
+
+// takes the function and component and make a container
+// the container is aware of state via redux
 
 export default connect(mapStateToProps)(BookList);

@@ -1,3 +1,7 @@
+# Goals Management App beginnings in React/Redux, 
+## starting from the reduxsimplestarter boilerplate code below
+
+
 # ReduxSimpleStarter
 
 Interested in learning [Redux](https://www.udemy.com/react-redux/)?
